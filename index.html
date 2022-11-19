@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <head> </head>
+    <meta name="referrer" content="no-referrer" />
+    <meta name="robots" content="noindex" />
+    <script src="/cdn-cgi/apps/head/bdXKEs2GnhJP7BcpCR28GDM77_w.js"></script>
+    <style type="text/css">
+        .jw-icon.jw-icon-inline.jw-button-color.jw-reset.jw-playlist-btn {
+            display: none;
+        }
+    </style>
+    <script src="//ssl.p.jwpcdn.com/player/v/8.0.12/jwplayer.js"></script>
+    <script>
+        jwplayer.key = "XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo";
+    </script>
+    <div id="player"></div>
+    <script>
+        var playerInstance = jwplayer("player");
+        playerInstance.setup({
+            file: "https://delivery-node-alhusayn.voe-network.net/engine/hls2/01/08413/vkk1iuxuy80b_n/index-v1-a1.m3u8?t=kBn1i4HMyT0ak_wfJ11N9ehEWgfymKlv44vt3wmhZKs&s=1668892399&e=14400&f=42069995&node=delivery-node-alhusayn.voe-network.net&i=186.84&sp=4500&asn=10620",
+            title: "HyPelis",
+            description: "LIVE",
+            image: "",
+            type: "hls",
+            width: "100%",
+            height: "100%",
+            aspectratio: "16:9",
+            autostart: false,
+            cast: {},
+        });
+        if (getLang == "") {
+            lang = 1;
+        }
+        jwplayer().on("play", function (e) {
+            jwplayer().setCurrentAudioTrack(lang);
+        });
+    </script>
+</html>
